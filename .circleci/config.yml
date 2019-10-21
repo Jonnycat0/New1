@@ -1,8 +1,42 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+version: 2
+=======
+Version: 2
+
+<<<<<<< HEAD
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 001
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+=======
 version: 2
 jobs:
   build:
     working_directory: ~/code
     docker:
+>>>>>>> master
       - image: circleci/android:api-25-alpha
     environment:
       JVM_OPTS: -Xmx3200m
@@ -21,6 +55,10 @@ jobs:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
           name: Run Tests
           command: ./gradlew lint test
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
@@ -30,3 +68,16 @@ jobs:
           path: app/build/test-results
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
 
+<<<<<<< HEAD
+=======
+          name: Print the Current Time
+          command: date
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+=======
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+>>>>>>> 001
+=======
+>>>>>>> master
