@@ -3,6 +3,14 @@ version: 2
 =======
 Version: 2
 
+<<<<<<< HEAD
+=======
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
 jobs:
   build-android:
     docker:
@@ -44,4 +52,7 @@ jobs:
 =======
           name: Print the Current Time
           command: date
+<<<<<<< HEAD
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+=======
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
