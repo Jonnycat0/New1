@@ -14,3 +14,7 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
