@@ -1,3 +1,11 @@
+
 git checkout master
 git merge --no-ff Jonnycat0-patch-2
+
+git fetch origin
+git checkout -b Jonnycat0-patch-1 origin/Jonnycat0-patch-1
+git merge master
+git checkout master
+git merge --no-ff Jonnycat0-patch-1
+
 git push origin master
