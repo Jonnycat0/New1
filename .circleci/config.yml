@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 version: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Version: 2
 
@@ -58,6 +59,8 @@ jobs:
 =======
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
 =======
+=======
+>>>>>>> master
  jobs:
    build:
      docker:
@@ -65,4 +68,7 @@ jobs:
      steps:
        - checkout
        - run: echo "A first hello"
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
