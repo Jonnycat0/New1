@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 version: 2
+<<<<<<< HEAD
 =======
 Version: 2
 
@@ -56,3 +57,12 @@ jobs:
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
 =======
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+=======
+ jobs:
+   build:
+     docker:
+       - image: circleci/ruby:2.4.1
+     steps:
+       - checkout
+       - run: echo "A first hello"
+>>>>>>> master
