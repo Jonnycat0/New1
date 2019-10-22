@@ -1,0 +1,104 @@
+<<<<<<< HEAD
+version: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 001
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 001
+Version: 2
+
+<<<<<<< HEAD
+=======
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: circleci/android:api-25-alpha
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+      - checkout
+      - restore_cache:
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
+#      - run:
+#         name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
+#         command: sudo chmod +x ./gradlew
+      - run:
+          name: Download Dependencies
+          command: ./gradlew androidDependencies
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
+      - run:
+<<<<<<< HEAD
+          name: Run Tests
+          command: ./gradlew lint test
+      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
+          path: app/build/reports
+          destination: reports
+      - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+          path: app/build/test-results
+      # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
+
+=======
+          name: Print the Current Time
+          command: date
+<<<<<<< HEAD
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+=======
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+=======
+=======
+>>>>>>> master
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 001
+=======
+>>>>>>> 001
+=======
+>>>>>>> 001
+ jobs:
+   build:
+     docker:
+       - image: circleci/ruby:2.4.1
+     steps:
+       - checkout
+       - run: echo "A first hello"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> 001
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> 001
+=======
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> 001
