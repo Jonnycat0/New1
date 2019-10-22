@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Version: 2
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
 version: 2
 =======
 Version: 2
@@ -20,6 +23,9 @@ jobs:
       - image: circleci/android:api
 
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 jobs:
   build:
@@ -35,9 +41,12 @@ jobs:
           command: echo Hello, world.
 
       - run:
+<<<<<<< HEAD
           name: Print the Current Time
           command: date
 =======
+=======
+>>>>>>> master
 <<<<<<< HEAD
           name: Run Tests
           command: ./gradlew lint test
@@ -55,4 +64,7 @@ jobs:
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
 =======
 >>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
