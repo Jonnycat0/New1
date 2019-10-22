@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 version: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 001
 <<<<<<< HEAD
 =======
 Version: 2
@@ -63,6 +66,9 @@ jobs:
 =======
 =======
 >>>>>>> master
+<<<<<<< HEAD
+>>>>>>> 001
+=======
 >>>>>>> 001
  jobs:
    build:
@@ -72,8 +78,14 @@ jobs:
        - checkout
        - run: echo "A first hello"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> master
+>>>>>>> 001
+=======
 >>>>>>> master
 =======
 >>>>>>> master
