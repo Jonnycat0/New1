@@ -1,4 +1,26 @@
+<<<<<<< HEAD
 Version: 2
+=======
+<<<<<<< HEAD
+version: 2
+=======
+Version: 2
+
+<<<<<<< HEAD
+=======
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+jobs:
+  build-android:
+    docker:
+      - image: circleci/android:api
+
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+>>>>>>> master
 jobs:
   build:
     docker:
@@ -8,9 +30,29 @@ jobs:
       - checkout
 
       - run:
+<<<<<<< HEAD
           name: Greeting
           command: echo Hello, world.
 
       - run:
           name: Print the Current Time
           command: date
+=======
+<<<<<<< HEAD
+          name: Run Tests
+          command: ./gradlew lint test
+      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
+          path: app/build/reports
+          destination: reports
+      - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+          path: app/build/test-results
+      # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
+
+=======
+          name: Print the Current Time
+          command: date
+<<<<<<< HEAD
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+=======
+>>>>>>> 30a3f3446d873c5c09f9ad9c5766003fc1be4f4e
+>>>>>>> master
